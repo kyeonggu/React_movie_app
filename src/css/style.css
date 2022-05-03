@@ -1,0 +1,41 @@
+.movie-listbox ul::after{content:""; display: table; clear: both;}
+.movie-listbox li{float: left; width: 25%; padding: 0 20px; margin-bottom: 20px; height: 200px; position: relative; overflow: hidden;}
+.movie-listbox li .movie-inner{position: relative; height: 200px; display: table; width: 100%; height: 100%;}
+.movie-listbox .movie-content-box{opacity: 0; position: absolute; left: 0; top: 20px; width: 100%; height: 100%; transition: all .3s; display: table;}
+.movie-listbox .movie-content{display: table-cell; vertical-align: middle; padding: 0 20px; background: rgba(0,0,0,0.7); }
+.movie-listbox .movie-content-box.on{top: 0; opacity: 1;}
+.movie-listbox .movie-content h1{color: white; font-family: "Noto Medium"; text-align: center; font-size: 22px;}
+.movie-listbox .movie-content p{font-size: 16px; line-height: 25px; height: 50px; overflow: hidden; color: #eee; margin-top: 20px; text-align: center;}
+
+@media all and (max-width: 1024px) {
+    .movie-listbox li{width: 33.3333%; height: 325px;}
+}
+
+@media all and (max-width: 768px) {
+    .movie-listbox li{width: 50%; height: 285px;}
+}
+
+@media all and (max-width: 460px) {
+    .movie-listbox li{width: 100%; float: none; height: 420px;}
+}
+
+/*SUB*/
+.movie-sub-header{height: 300px;}
+.movie-info-box{max-width: 1600px; margin: 0 auto; background-color: white; position: relative; top: -30px; border-radius: 25px; padding: 20px 10px; text-align: center;}
+.movie-info-box h1{font-family: "Noto Medium"; font-size: 30px; color: black;}
+.movie-genres ul{display: inline-block; margin-top: 20px;}
+.movie-genres li{display: inline-block; border: 1px solid #ddd; border-radius: 50px; padding: 5px 10px; margin-right: 5px; color: #999;}
+.movie-genres li:last-child{margin-right: 0;}
+.movie-stats{margin: 10px 0;}
+.movie-stats li{display: inline-block; padding: 0 10px; position: relative; font-size: 14px;}
+.movie-stats li::after{content:""; display: block; position: absolute; width: 1px; height: 10px; background-color: #999; right: 0; top: 50%; margin-top: -5px;}
+.movie-stats li:last-child::after{display: none;}
+.movie-info{margin-top: 20px;}
+.movie-info::after{content:""; display: table; clear: both;}
+.movie-poster{float: left; width: 40%;}
+.movie-poster img{width: 100%; display: block;}
+.movie-summery{float: right; width: 55%; text-align: left;}
+
+@media all and (max-width: 1600px) {
+    .movie-info-box{margin: 0 20px;}
+}
